@@ -1,0 +1,36 @@
+.navbar {
+  background-color:  #2b2e2b;
+  color: white;
+  text-transform: uppercase;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  color:  #49cb90;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  color:  #49cb90;
+  border: 1px solid #49cb90;
+  padding: 7px;
+}
+
+.navbar-brand:hover{
+  transform: scale(1.1);
+  transition: transform .4s;
+  cursor: pointer;
+  border-color: #eae0c8;
+}
+
+span {
+  color:#eae0c8;
+}
+
+
+
+
+
