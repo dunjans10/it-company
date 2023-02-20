@@ -10,6 +10,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { OurTeamComponent } from './components/about/our-team/our-team.component';
+import { BlogComponent } from './components/about/blog/blog.component';
+import { NewsComponent } from './components/about/news/news.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { HomeComponent } from './components/home/home.component';
     ContactComponent,
     CareersComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    OurTeamComponent,
+    BlogComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
