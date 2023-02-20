@@ -14,6 +14,6 @@ export class CareerItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
 }

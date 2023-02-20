@@ -1,0 +1,8 @@
+.card {
+  border: 3px solid #2b2e2b;
+  margin-bottom: 7px;
+}
+
+.card:hover {
+  background-color: #c7c3c3;
+}

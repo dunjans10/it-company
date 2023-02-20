@@ -4,6 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/about/blog/blog.component';
 import { NewsComponent } from './components/about/news/news.component';
 import { OurTeamComponent } from './components/about/our-team/our-team.component';
+import { CareerDetailsComponent } from './components/careers/career-details/career-details.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
@@ -14,7 +15,9 @@ const routes: Routes = [
   {path:'our-team', component:OurTeamComponent},
   {path:'blog', component:BlogComponent},
   {path:'news', component:NewsComponent},
-  {path:'careers', component:CareersComponent},
+  {path:'careers', component:CareersComponent, children:[
+    {path:':id', component:CareerDetailsComponent}
+  ]},
   {path:'contact', component:ContactComponent}
 ];
 
