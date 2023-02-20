@@ -1,9 +1,9 @@
 <ul ngbNav class="navbar navbar-inverse">
   <h3 class="navbar-brand">Green <span>Touch</span></h3>
-	<li [routerLink]="'/about'" ngbDropdown class="nav-item">
+	<li  ngbDropdown class="nav-item">
     <a (click)="false" class="nav-link" ngbDropdownToggle class="text-light">About us</a>
   <div ngbDropdownMenu  class="p-3 mb-2 bg-success text-white">
-    <button ngbDropdownItem >Our story</button>
+    <button ngbDropdownItem [routerLink]="'/about'">Our story</button>
     <button ngbDropdownItem>Our leadership team</button>
     <button ngbDropdownItem>Others about us</button>
     <div class="dropdown-divider"></div>
