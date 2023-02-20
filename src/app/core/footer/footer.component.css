@@ -1,0 +1,13 @@
+div {
+  background-color:  #2b2e2b;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+
+}
+
+span {
+  color: #28a745;
+}

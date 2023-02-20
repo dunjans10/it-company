@@ -9,13 +9,13 @@ li {
 }
 
 li:hover {
-  color:  #49cb90;
   text-decoration: underline;
+  background-color: #28a745;
 }
 
 .navbar-brand {
-  color:  #49cb90;
-  border: 1px solid #49cb90;
+  color: #28a745;
+  border: 1px solid #28a745;
   padding: 7px;
 }
 
@@ -29,6 +29,7 @@ li:hover {
 span {
   color:#eae0c8;
 }
+
 
 
 
