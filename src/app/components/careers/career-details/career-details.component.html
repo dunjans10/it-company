@@ -1,2 +1,17 @@
-<p>career-details works!</p>
 
+<div>
+  <h3>{{career.name}}</h3>
+  <p>{{career.places}}</p>
+  <hr/>
+  <h4>Job Description</h4>
+  <p>{{career.description}}</p>
+
+  <h4>Key Responsibilities:</h4>
+  <ul *ngFor="let resp of career.responsibilities">
+    <li>{{resp}}</li>
+  </ul>
+  <h4>Required Qualifications:</h4>
+  <ul *ngFor="let qualification of career.qualifications">
+    <li>{{qualification}}</li>
+  </ul>
+</div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { CareerModel } from '../careers.model';
+import { CareersService } from '../careers.service';
 
 
 @Component({
@@ -11,9 +13,11 @@ export class CareerDetailsComponent implements OnInit {
   id!:number;
   career!:CareerModel;
 
-  constructor() { }
+  constructor(private careersService:CareersService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    const id = +this.route.snapshot.params['id']
+    this.career = this.careersService.getCareer(id);
     }
 
 }
