@@ -1,7 +1,8 @@
 
-<div>
+<div class="wrapper">
+  <button [routerLink]="'/careers'" type="button" class="btn btn-success">Back to Careers</button>
   <h3>{{career.name}}</h3>
-  <p>{{career.places}}</p>
+  <p><i class="bi bi-arrow-right-circle"></i> {{career.places}}</p>
   <hr/>
   <h4>Job Description</h4>
   <p>{{career.description}}</p>
@@ -14,4 +15,5 @@
   <ul *ngFor="let qualification of career.qualifications">
     <li>{{qualification}}</li>
   </ul>
+  <button type="submit" class="btn btn-success">Apply for this job</button>
 </div>

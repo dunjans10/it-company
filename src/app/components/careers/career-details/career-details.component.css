@@ -1,0 +1,18 @@
+.wrapper {
+  padding: 45px;
+  text-align: justify;
+}
+
+h3, h4 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+h3 {
+  color:#28a745;
+}
+
+i {
+  color:#28a745;
+}
+
