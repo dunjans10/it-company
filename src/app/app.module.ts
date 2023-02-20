@@ -13,6 +13,9 @@ import { HomeComponent } from './components/home/home.component';
 import { OurTeamComponent } from './components/about/our-team/our-team.component';
 import { BlogComponent } from './components/about/blog/blog.component';
 import { NewsComponent } from './components/about/news/news.component';
+import { CareerItemComponent } from './components/careers/career-item/career-item.component';
+import { CareerDetailsComponent } from './components/careers/career-details/career-details.component';
+import { CareersService } from './components/careers/careers.service';
 
 @NgModule({
   declarations: [
@@ -25,14 +28,16 @@ import { NewsComponent } from './components/about/news/news.component';
     HomeComponent,
     OurTeamComponent,
     BlogComponent,
-    NewsComponent
+    NewsComponent,
+    CareerItemComponent,
+    CareerDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [CareersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

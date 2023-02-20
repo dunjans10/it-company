@@ -1,1 +1,11 @@
-<p>careers works!</p>
+<div class="wrapper">
+  <p>Explore our open positions</p>
+  <div>
+    <app-career-item
+        *ngFor="let careerEl of careers; let i = index" [career]="careerEl" [index]="i"
+    ></app-career-item>
+  </div>
+
+</div>
+
+
