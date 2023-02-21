@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <form class="form">
+    <div class="form-group">
+      <p>Personal information:</p>
+      <hr/>
+      <div class="personal-group">
+        <div>
+          <label for="firstName">First Name</label>
+          <input id="firstName" class="form-control" type="text">
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input id="lastName" class="form-control" type="text">
+        </div>
+      </div>
+      <div class="personal-group">
+        <div>
+          <label for="email">Email</label>
+          <input id="email" class="form-control" type="email">
+        </div>
+        <div>
+          <label for="mobile">Mobile</label>
+          <input id="mobile" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <p>Social networks:</p>
+      <hr/>
+      <div class="link-wrapper">
+        <input placeholder="Profile URL:" #newLink class="form-control link" (keyup.enter)="addLink(newLink.value)" (blur)="addLink(newLink.value); newLink.value='' ">
+        <button type="button" (click)="addLink(newLink.value)" class="btn btn-outline-success"><i class="bi bi-plus"></i></button>
+      </div>
+      <div class="added-links">
+        <span *ngFor="let link of links">{{link}}<button class="btn btn-outline-danger btn-sm" type="button"><i class="bi bi-dash"></i></button><br></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <p>Professional data:</p>
+      <hr/>
+      <div>
+        <input type="file" id="file" onchange="console.log(event.target.files)">
+        <label class="file" for="file">Apply with Resume <i class="bi bi-paperclip"></i></label>
+      </div>
+      <div>
+        <input type="file" id="file" onchange="console.log(event.target.files)">
+        <label class="file" for="file">Cover Letter <i class="bi bi-paperclip"></i></label>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-success">Submit your application</button>
+  </form>
+</div>

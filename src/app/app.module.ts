@@ -16,6 +16,8 @@ import { NewsComponent } from './components/about/news/news.component';
 import { CareerItemComponent } from './components/careers/career-item/career-item.component';
 import { CareerDetailsComponent } from './components/careers/career-details/career-details.component';
 import { CareersService } from './components/careers/careers.service';
+import { JobFormComponent } from './components/careers/career-details/job-form/job-form.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { CareersService } from './components/careers/careers.service';
     BlogComponent,
     NewsComponent,
     CareerItemComponent,
-    CareerDetailsComponent
+    CareerDetailsComponent,
+    JobFormComponent
   ],
   imports: [
     BrowserModule,

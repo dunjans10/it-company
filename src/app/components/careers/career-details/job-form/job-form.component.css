@@ -1,0 +1,49 @@
+form {
+  padding: 45px;
+}
+
+p {
+  color: #28a745;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.personal-group {
+  display: flex;
+  gap:25px;
+}
+
+ input[type="file"] {
+  display: none;
+ }
+
+.file {
+  padding: 8px;
+  border-radius: 6px;
+  border:1px solid #28a745;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  width: 70%;
+}
+
+.added-links{
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  display: flex;
+  gap:20px;
+  padding-top: 15px;
+  align-items: center;
+}

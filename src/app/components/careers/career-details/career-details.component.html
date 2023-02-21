@@ -15,5 +15,5 @@
   <ul *ngFor="let qualification of career.qualifications">
     <li>{{qualification}}</li>
   </ul>
-  <button type="submit" class="btn btn-success">Apply for this job</button>
+  <button type="submit" class="btn btn-success" (click)="applyForJob()">Apply for this job</button>
 </div>
